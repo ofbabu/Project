@@ -54,6 +54,12 @@ body{
 .container form input::placeholder{
     font-size: .9rem;
 }
+.container form i{
+    position: relative;
+    top: -25px;
+    left: 100px;
+    cursor: pointer;
+}
 
 .container form p{
     color: rgba(255, 255, 255, .7);
