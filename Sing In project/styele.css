@@ -68,6 +68,9 @@ body{
     padding-top: 5px;
     cursor: pointer;
 }
+.container form p:hover{
+    color: rgba(255, 255, 255, 1);
+}
 
 .container form button{
     width: 80%;
