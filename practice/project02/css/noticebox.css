@@ -1,0 +1,56 @@
+.ntcbox{
+    background-color: antiquewhite;
+    width: 500px;
+    height: 250px;
+    margin: 50px;
+    border-radius: 8px;
+}
+.ntchdr{
+    background-color: rgb(228, 51, 51);
+    color: white;
+    border-radius: 5px;
+
+}
+.ntchdr h3{
+    padding: 5px;
+}
+.ntc{
+    width: 100%;
+    height: 250px;
+}
+
+.mquscroll{
+    direction: ltr;
+}
+.ntc ul{
+    list-style: none;
+}
+.ntc ul li {
+    padding: 10px;
+}
+.ntc ul li a {
+    text-decoration: none;
+}
+.ntc-date {
+    width:73px;
+    float: left;
+    margin: .111em 10px 0 0 ;
+    background:#e6caca;
+    font-size: .86em;
+    line-height: 1em;
+    color: #5e5b5c;
+    text-align: center;
+}
+.ntc-date span{
+    display: block;
+    padding: 0 0 0 0.067em;
+    font-size: 1.05em;
+    line-height: 1.467em;
+    color: #fff;
+    background-color: green;
+    border-radius: 3px 3px 0 0 ;
+}
+marquee{
+    height: 200px;
+    
+}

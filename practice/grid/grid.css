@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(/grid/natural\ bg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+
+}
+.container{
+    display: grid;
+    width: 95%;
+    height: 100%;
+    padding: 10px;
+    margin: 2px 0 0 30px;
+    border: 3px solid white;
+    background: transparent;
+    grid-template-columns: 30fr 10fr;
+    grid-template-rows: .3fr .01fr 1fr .5fr .5fr .8fr 1fr ;
+    grid-template-areas: "menuu menuu"
+                         "box1 box1"
+                         "box2 box2"
+                         "box3 box4"
+                         "box5 box6"
+                         "footer1 footer1"
+                         ;
+
+                         grid-gap: .2rem;
+                         text-align: center;
+   
+}
+
+@media only screen and (max-width: 640px){
+    .container{
+        grid-template-columns: 2fr;
+        grid-template-rows: 0.01fr 1fr 0.1fr 1.2fr 1.2fr 1.2fr  1.2fr 1fr;
+        grid-template-areas: "menuu "
+                             "box1"
+                             "box2"
+                             "box3"
+                             "box4"
+                             "box5"
+                             "box6"
+                             "footer";
+
+
+    }
+}
+.field{
+    color: rgb(1, 11, 19);
+}
+nav{
+    background: red;
+    width: 100%;
+}
+.menuu{
+background-color: rgb(73, 73, 147);
+grid-area: menuu;
+color: red;
+align-items: center;
+justify-content: center;
+padding: 10px;
+background: transparent;
+}
+menu ul{
+    margin: 10px;
+    float: right;
+}
+
+menu ul li {
+    display: inline;
+    width: 100%;
+    height: auto;
+    background-color: blueviolet;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    
+}
+.fa-home{
+    width: 25px;
+    height:25px;
+    background-color: aliceblue;
+    padding-top: 5px;
+    border-radius: 8px;
+}
+
+menu ul :hover {
+    background-color: rgb(151, 208, 27);
+    color: azure;
+    border-radius: 10px;   
+}
+
+
+
+.box1{
+    grid-area: box1;
+    background-color: aliceblue;
+    border: 3px solid black;
+}
+.box2{
+    background-color: rgb(238, 169, 30);
+    grid-area: box2;
+}
+.box3{
+    background-color: rgb(211, 186, 234);
+    grid-area: box3;
+}
+.box4{
+    background-color: rgb(143, 195, 40);
+    grid-area: box4;
+}
+.box5{
+    background-color: rgb(30, 141, 106);
+    grid-area: box5;
+}
+.box6{
+    background-color: rgb(127, 105, 147); 
+    grid-area: box6;
+}
+.footer1{
+    background-color: rgb(12, 11, 12);
+    grid-area: footer1;
+    color: aliceblue;
+    width: auto;
+    text-align: center;
+}

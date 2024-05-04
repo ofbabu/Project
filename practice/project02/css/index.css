@@ -1,0 +1,312 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "myriadpro-regular",Helvetica,sans-serif, Tahoma, SolaimanLipi, Kalpurush, Shonar Bangla, Arial;
+    color: #717171;
+    text-align: left;
+    background: #e6caca;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    background: yellow;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    
+
+
+
+}
+.fixhdr{
+    width: 100%;
+    padding: 0;
+    background: #7e2d2d;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 15;
+    border-bottom: 0.4em solid #6b2e94;
+
+}
+.fx_hdr_wrap {
+    width: 90%;
+    padding: 0 5%;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    bottom: -2.093em;
+    
+    
+}
+.btn1 {
+    padding: 0.118em 24px 0.353em 10px;
+    margin: 0 0 0 15px;
+    font-size: 0.9em;
+    line-height: 1.498em;
+    float: right;
+    color: #fff;
+    background: #ed1c24;
+    position: relative;
+    text-decoration:none ;
+
+}
+
+header.headers{
+    padding: 0 5%;
+    display: inline;
+    position: relative;
+    z-index: 12;
+    width: 90%;
+    height: auto;
+    background: #6b2e54;
+    float: left;
+}
+.hdr-warp{
+    position: relative;
+    display: inline;
+}
+.hdr-text{
+    margin-left: 200px;
+    padding-top: 25px;
+}
+#logo{
+    width: 100px ;
+    height: auto;
+    margin: 0 0 1.2em;
+    float: inline-start;
+    padding-left: 10px;
+
+}
+.cnticons {
+    display: inline;
+    width: 30px;
+    height:30px;
+    float: right;
+    margin: 5PX;
+
+
+}
+.icons{
+    position: absolute;
+    right: 25px;
+    top: 75px;
+}
+.menu{
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    border-radius: 8px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+.menu li{
+    float: left;
+    margin: 10px;
+    list-style: none;
+
+}
+.menu li a {
+    color: black;
+    font-style: bold;
+    text-decoration: none;
+    transition: .5s;
+
+    
+}
+
+.menu li  :hover{
+    padding: 12px 15px;
+    border-radius: 10px;
+    background-color: rgb(220, 119, 11);
+    text-decoration: none;
+
+}
+list-box {
+    width: 90px;
+    height: 25px;
+    border-radius: 5px;
+    background-color:rgb(220, 119, 11) ;
+}
+
+
+.newsbox{
+    display: block;
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    border-top: 1px solid black;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #fff;
+    line-height: 1.118em;
+
+}
+
+.newstittle{
+    width: auto;
+    height: 100%;
+    background-color:rgb(220, 119, 11) ;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 25px;
+}
+.news-marque{
+    color: red;
+    width: 85%;
+    font-size: 16px;
+    font-style: italic;
+    
+}
+
+.section{
+    
+    display: grid;
+    width: 97%;
+    height: 100%;
+    padding: 25px;
+    margin: 0;
+    color: black;
+    font-size: 25px;
+    grid-template-columns: 1fr 1fr .5fr 1.5fr;
+    grid-template-rows: .3fr 1.5fr .1fr 1.3fr .8fr;
+    grid-template-areas: "photobox photobox photobox sidebox "
+                         "slider main main main"
+                         "slider notice-ber notice-ber notice-ber "
+                         "slider box1 box2 box3 "
+                         "slider footer footer footer" ;
+
+                         grid-gap: .2rem;
+                         text-align: center;
+                        
+
+}
+
+
+@media only screen and (max-width: 640px){
+    .section{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.01fr 1fr 0.1fr 1.2fr 1.2fr 1.2fr  1.2fr 1fr;
+        grid-template-areas: "photobox ntc-box "
+                             "main"
+                             "notice-ber"
+                             "box1"
+                             "box2"
+                             "box3"
+                             "slider"
+                             "footer";
+
+
+    }
+}
+
+.photobox{
+    background-color: red;
+    grid-area: photobox;
+    height: 284px;
+}
+
+.slide-image{
+    width: 100%;
+    height: 284px;
+}
+.ntcbox{
+    background-color: antiquewhite;
+}
+.ntchdr{
+    text-align: left;
+    background-color: #ed1c24;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.ntchdr a{
+    padding-left: 20px; 
+    font-size: 18px;
+
+}
+.ntc-icon{
+    width: 25px;
+    height: 25px;
+    float: right;
+    padding-top: 5px;
+    padding-right: 25px;
+    
+}
+
+.ntcmarquee {
+    height: 100%;
+    font-size: 16px; 
+}
+.ntc ul{
+    list-style: none;
+}
+.ntc ul li {
+    padding: 8px;
+    margin: 0;
+}
+.ntc ul li a {
+    text-decoration: none;
+    color: black;
+}
+.ntc-date {
+    width:73px;
+    float: left;
+    margin: .111em 10px 0 0 ;
+    background:#e6caca;
+    font-size: .86em;
+    line-height: 1em;
+    color: #5e5b5c;
+    text-align: center;
+}
+.ntc-date span{
+    display: block;
+    padding: 0 0 0 0;
+    font-size: 1em;
+    line-height: 1.467em;
+    color: #fff;
+    background-color: green;
+    border-radius: 3px 3px 0 0 ;
+}
+.block1{
+    margin-left: 10px;
+}
+
+.block-information h3{
+    margin: 5px;
+    padding: 2px;
+    text-align: left ;
+}
+#block{
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+}
+#block h3{
+    margin: 5px;
+    padding: 2px;
+    text-align: left ;
+}
+.block-information{
+    background-color: rgb(72, 205, 92);
+}
+.block-class-rutin{
+    background-color: rgb(196, 137, 21);
+}
+.block-exam-rutin{
+    background-color: rgb(13, 226, 237);
+}
+.block-result{
+    background-color: rgb(38, 75, 178);
+}

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ভর্তি ফরম</title>
+    <link rel="stylesheet" href="css/admission-form.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="info flex">
+        <img class="logo1" src="image/logo2.png" alt="logo1">
+        <div>
+        <h1>কাজিম উদ্দিন মডেল বিদ্যাপীঠ</h1>
+        <h2> লেংগা বাজার ,সদর ,গাইবান্ধা</h2>
+        <h3> বিদ্যালয় কোডঃ ১১২১২১২ </h3></div>
+        <div class="imgbox imgfit "><img class="imgfit" src="images/profile.png" id="profile-pic"></div>
+            
+</div>
+
+    <div class="title"><b><em><u>ভর্তি ফরম</u></em></b></div>
+    <form action="">
+        <div class="user-details">
+            
+<!--ei khane title2 er vitorer kaj-->
+     <div class="title2"><b><em>শিক্ষার্থীর তথ্য</em></b></div>
+
+         <div class="flex">
+            <div class="input-box">
+                <span class="details">শিক্ষার্থীর নাম (বাংলায় )</span>
+                <input type="text" placeholder="এইখানে আপনার তথ্য লিখুন">
+            </div>
+
+            <div class="input-box">
+                <span class="details">শিক্ষার্থীর নাম ইংরেজিতে</span>
+                <input type="text" placeholder="এইখানে আপনার তথ্য লিখুন">
+            </div>
+
+            <div class="input-box">
+                <span class="details">শ্রেণী</span>
+                <input type="text" placeholder="এইখানে আপনার তথ্য লিখুন">
+            </div>
+
+            <div class="input-box">
+                <span class="details">শ্রেণী রোল</span>
+                <input type="number" placeholder="এইখানে আপনার তথ্য লিখুন">
+            </div>
+
+         
+            <div class="gender-details option-inline">
+                <input type="radio" name="gender" id="dot-1">
+                <input type="radio" name="gender" id="dot-2">
+
+
+                <span class="gender-title"> লিঙ্গ</span>
+
+                
+                <div class="permition-catagory">
+                    <label for="dot-1">
+                        <span class="dot one"></span> 
+                        <span class="choice">ছেলে</span>   
+                    </label>
+                </div>
+
+                <div class="permition-catagory">
+                    <label for="dot-2">
+                        <span class="dot two"></span> 
+                        <span class="choice">মেয়ে</span>   
+                    </label>
+                </div>
+
+            </div>
+            
+            <div class="input-box">
+                <span class="details"> জন্ম নিবন্ধন নম্বর</span>
+                <input type="number" placeholder="এইখানে আপনার তথ্য লিখুন">
+            </div>
+            
+            <div class="input-box">
+                <span class="details">জন্ম তারিখ</span>
+                <input type="date" placeholder="এইখানে আপনার তথ্য লিখুন">
+            </div>
+            
+            <div class="input-box">
+                <span class="details">ধর্ম</span>
+                <input type="text" placeholder="এইখানে আপনার তথ্য লিখুন">
+            </div>
+
+            <div class="input-box">
+                <span class="details"> জাতীয়তা</span>
+                <input type="text" placeholder="এইখানে আপনার তথ্য লিখুন">
+            </div>
+        </div>
+
+        <div class="title3"><em><b></b>ঠিকানা ;</em></div>
+
+        <div class="flex">
+            <div class="input-box">
+                <span class="details">গ্রাম</span>
+                <input type="text" placeholder="এইখানে আপনার তথ্য লিখুন">
+            </div>
+
+            <div class="input-box">
+                <span class="details"> ডাকঘর</span>
+                <input type="text" placeholder="এইখানে আপনার তথ্য লিখুন">
+            </div>
+
+            <div class="input-box">
+                <span class="details"> ওয়ার্ড </span>
+                <input type="text" placeholder="এইখানে আপনার তথ্য লিখুন">
+            </div>
+            
+            <div class="input-box">
+                <span class="details"> ইউনিয়ন</span>
+                <input type="text" placeholder="এইখানে আপনার তথ্য লিখুন">
+            </div>
+            
+            <div class="input-box">
+                <span class="details"> থানা</span>
+                <input type="text" placeholder="এইখানে আপনার তথ্য লিখুন">
+            </div>
+            
+            <div class="input-box">
+                <span class="details"> জেলা</span>
+                <input type="text" placeholder="এইখানে আপনার তথ্য লিখুন">
+            </div>
+            
+            <div class="input-box">
+                <span class="details"> বিভাগ </span>
+                <input type="text" placeholder="এইখানে আপনার তথ্য লিখুন">
+            </div>
+        </div>
+
+
+         <!--ei khane photo inset er kaj kora hoyese-->           
+    
+         <span class="details"> শিক্ষার্থীর ছবি</span><br>
+         <input class="unvisible" type="file" onchange="readURL(this)" accept="Image/" id="input-file"><br>
+         <div class="upload"><label for="input-file">ছবি যুক্ত করুন</label></div>
+
+                 <script>
+                     let profilepic = document.getElementById("profile-pic");
+                     let inputfile = document.getElementById("input-file");
+
+                     inputfile.onchange = function(){
+                         profilepic.src = URL.createObjectURL(inputfile.files[0]);
+                     }
+                 </script>
+
+        
+            
+        <!--ei khane father info-->
+        
+        <br><br>
+        <div class="title2"><em><b>শিক্ষার্থীর পিতার তথ্য</b></em></div>
+
+            <div class="flex">
+            <div class="input-box">
+                <span class="details"> পিতার নাম ( বাংলায় )</span>
+                <input type="text" placeholder="এইখানে আপনার তথ্য লিখুন">
+            </div>
+            
+            <div class="input-box">
+                <span class="details"> পিতার নাম  ( ইংরেজিতে )</span>
+                <input type="text" placeholder="এইখানে আপনার তথ্য লিখুন">
+            </div>
+            
+            <div class="input-box">
+                <span class="details"> পেশা</span>
+                <input type="text" placeholder="এইখানে আপনার তথ্য লিখুন">
+            </div>
+            
+            <div class="input-box">
+                <span class="details"> এনআইডি নম্বর</span>
+                <input type="number" placeholder="এইখানে আপনার তথ্য লিখুন">
+            </div>
+            
+            <div class="input-box">
+                <span class="details"> জন্ম তারিখ</span>
+                <input type="date" placeholder="এইখানে আপনার তথ্য লিখুন">
+            </div>
+            
+            <div class="input-box">
+                <span class="details"> মোবাইল নম্বর</span>
+                <input type="number" placeholder="এইখানে আপনার তথ্য লিখুন">
+            </div>
+        </div>
+
+      <!--mother info-->
+         
+            <div class="title2"><em><b>শিক্ষার্থীর  মাতার তথ্য</b></em></div>
+
+            <div class="flex">
+            <div class="input-box">
+                <span class="details">  মাতার  নাম ( বাংলায় )</span>
+                <input type="text" placeholder="এইখানে আপনার তথ্য লিখুন">
+            </div>
+            
+            <div class="input-box">
+                <span class="details">  মাতার  নাম  ( ইংরেজিতে )</span>
+                <input type="text" placeholder="এইখানে আপনার তথ্য লিখুন">
+            </div>
+            
+            <div class="input-box">
+                <span class="details"> পেশা</span>
+                <input type="text" placeholder="এইখানে আপনার তথ্য লিখুন">
+            </div>
+            
+            <div class="input-box">
+                <span class="details"> এনআইডি নম্বর</span>
+                <input type="number" placeholder="এইখানে আপনার তথ্য লিখুন">
+            </div>
+            
+            <div class="input-box">
+                <span class="details"> জন্ম তারিখ</span>
+                <input type="date" placeholder="এইখানে আপনার তথ্য লিখুন">
+            </div>
+            
+            <div class="input-box">
+                <span class="details"> মোবাইল নম্বর</span>
+                <input type="number" placeholder="এইখানে আপনার তথ্য লিখুন">
+            </div>
+        </div>
+
+        <!--others patents info-->
+        
+            <div class="title2"><em><b>পিতা-মাতার অবর্তমানে অভিভাবক এর তথ্য</b></em></div>
+
+            <div class="flex">
+            <div class="input-box">
+                <span class="details">অভিভাবক নাম </span>
+                <input type="text" placeholder="এইখানে আপনার তথ্য লিখুন">
+            </div>
+                     
+            <div class="input-box">
+                <span class="details"> পেশা</span>
+                <input type="text" placeholder="এইখানে আপনার তথ্য লিখুন">
+            </div>
+            
+            <div class="input-box">
+                <span class="details"> এনআইডি নম্বর</span>
+                <input type="number" placeholder="এইখানে আপনার তথ্য লিখুন">
+            </div>
+            
+            <div class="input-box">
+                <span class="details"> মোবাইল নম্বর</span>
+                <input type="number" placeholder="এইখানে আপনার তথ্য লিখুন">
+            </div> </div>
+
+            <div class="gender-details">
+                <input type="radio" name="gender" id="dot-1">
+
+                <span class="gender-title"><p>আমি অঙ্গীকার করছি যে,<br>
+                    ১.উপরের তথ্য সমূহ সত্য ও সঠিক
+                    আমি বিদ্যালয়ের বিধানসমূহ মেনে চলতে বাধ্য থাকিব ।<br> ২. বিদ্যালয়ের শান্তি শৃঙ্খলা ও নিয়মের পরিপন্থী কাজে জড়িত থাকলে বা ভুল তত্ত্ব প্রদান করলে কর্তৃপক্ষ প্রদত্ত যেকোনো শাস্তি গ্রহণে বাধ্য থাকবো ।<br>
+                    ৩. আমি বিদ্যালয়ের পাওনাদি সঠিক সময়ে পরিশোধ করতে বাধ্য থাকিব এবং বিলম্ব হলে কর্তৃপক্ষ নির্ধারিত জরিমানা মেনে নিয়ে তা পরিশোধ করব ।</p></span>
+
+                <div class="permition-catagory">
+                    <label for="dot-3">
+                        <span class="dot checkbook"></span> 
+                        <span class="choice">আমি সম্মতি জানালাম</span>   
+                    </label>
+                </div>
+
+                </div>
+
+            </div>
+            
+
+            
+
+            <div class="batton">
+                <input type="submit" value=" Save">
+            </div>
+
+        </div>
+    </form>
+</div>
+
+
+    
+
+
+</body>
+</html>

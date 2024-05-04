@@ -1,0 +1,229 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    display: fle;
+    font-family: Roboto,sans-serif,arial;
+    font-size: 16px;
+    color: #242424;
+    background: linear-gradient(135deg,#71b7e6,#9b59b6);
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 90%;
+    height: auto;
+    background-color: antiquewhite;
+    padding: 1%;
+    margin: 5%;
+    box-shadow: 10px 5px silder black;
+    border-radius: 5px;
+    
+}
+.logo1{
+    width: 200px;
+    height: 200PX;
+    float: left;
+    margin-left: 100px;
+}
+.info{
+    width: 100%;
+    text-align:center ;
+    color: rgb(3,3,82);
+    
+
+}
+.imgbox{
+    width: 200px;
+    height: 200px;
+    background: white;
+   float: right;
+   margin-right: 100px;
+}
+.imgfit{
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+}
+.upload{
+    width:300px;
+    height: 50px;
+    line-height: 50px;
+    background: #ad8de5;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+.unvisible{
+    display: none;
+}
+
+.container .title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    position: relative;
+    color: rgb(82, 3, 70);
+}
+
+.container .title::before{
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 30px;
+    width: 30px;
+    background-color: linear-gradient(135deg,#71b7e6,#9b59b6);
+
+}
+
+.container .title2{
+    font-size: 25px;
+    color: red;
+    margin-left: 5%;
+    
+}
+.container .title3{
+    font-size: 20px;
+    font-weight: 500;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+.option-inline{
+    display: inline-flex;
+}
+
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+
+}
+
+.user-details .input-box.details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input{
+    height: 50px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 25px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s;
+
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: #9b59b6;
+
+}
+
+form .gender-details .gender-title{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+form .gender-details .permition-catagory{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: 14px  12px;
+
+}
+
+.gender-details .permition-catagory label{
+    display: flex;
+    align-items: center;
+
+
+}
+
+.gender-details .permition-catagory .dot{
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin-right: 10px;
+    border:3px solid transparent;
+    transition: all 0.3s ease;
+
+}
+
+#dot-1:checked ~ .permition-catagory label .one,
+#dot-2:checked ~ .permition-catagory label .two{
+    border-color: #d9d9d9;
+    background: #9b59b6;
+}
+
+#dot-3:checked ~ .permition-catagory label .checkbook{
+    border-color: #d9d9d9;
+    background: #9b59b6;
+}
+
+
+form input[type="radio"]{
+    display: none;
+}
+
+form .batton{
+    height: 45px;
+    margin: 45px 0;
+    margin-left: 50%;
+}
+form .batton input{
+    height: 100%;
+    width: 100px;
+    color: #fff;
+    background: linear-gradient(135deg,#71b7e6,#9b59b6);
+    font-size: 24px;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+
+
+}
+form .batton input:hover{
+    background: linear-gradient(-135deg,#71b7e6,#9b59b6);
+}
+
+@media(max-width:584px){
+    .container{
+        width: 90%;}
+
+        form .user-details .input-box{
+            margin-bottom: 15px;
+            width:100%; }
+
+            form .gender-details .permition-catagory{
+                width: 100%;}
+
+                .container form .user-details{
+                    max-height: 300px;
+                    overflow-y: scroll;
+                }
+
+                .user-details::-webkit-scrollbar{
+                    width: 0;
+                }
+
+}
+
+
+
