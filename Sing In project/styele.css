@@ -1,0 +1,94 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: Arial, Helvetica, sans-serif; */
+     /* font-family: poppins, sans-serif; */
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./nathan-anderson-iYO-EGosrCo-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+
+.container{
+    width: 350px;
+    height: auto;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: auto;
+    background-color: rgba(255, 255, 255, .1);
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 20px;
+    box-shadow:5px 5px 30px rgba(255, 255, 255, .5);
+}
+.container header{
+    text-align: center;
+    color: rgba(255, 255, 255, .7);
+    padding: 30px 0;
+}
+.container form{
+    text-align: center;
+    margin: 0 50px;
+
+}
+.container form input{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background: rgba(255, 255, 255, .7);
+}
+.container form input::placeholder{
+    font-size: .9rem;
+}
+
+.container form p{
+    color: rgba(255, 255, 255, .7);
+    text-align: right;
+    padding-right: 15px;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.container form button{
+    width: 80%;
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 10px;
+    margin:50px auto;
+    background: linear-gradient(to right,#b276d2,#3da4d8);
+    color: #fff;
+    font-weight: bold; 
+    cursor: pointer; 
+}
+.container form button:hover{
+    background: linear-gradient(to right,#acbe62, #d4a66a);
+    transition: all .5s ease-in .3s; 
+}
+.container form p:last-child{
+    text-align: center;
+    padding-bottom: 50px;
+    color: rgba(255, 255, 255, .7);
+    cursor:default;
+}
+.container form p:last-child a{
+    text-align: center;
+    padding-bottom: 50px;
+    color: rgba(197, 18, 36, 0.9);
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
