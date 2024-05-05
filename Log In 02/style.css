@@ -181,5 +181,7 @@ body{
     margin-top: 10px;
 }
 .container form input[type="submit"]:hover{
-    opacity: 0.8;   
+    background: linear-gradient(to right,#45f3f3,#ff2770); 
+    color: #fff; 
+    transform: 0.5s;
 }
