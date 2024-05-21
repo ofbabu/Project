@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #222337;
+}
+.nav{
+    position: relative;
+    width: 400px;
+    height: 60px;background:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.nav ul{
+    display: flex;
+    width: 350px;
+}
+.nav ul li{
+    list-style: none;
+    position: relative;
+    width: 60px;
+    height: 50px;
+    z-index: 2;
+}
+.nav ul li a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.nav ul li a .icon{
+    position: relative0;
+    display: block;
+    width: 50px;
+    height: 50px;
+    /* background: #000; */
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%;
+    font-size: 1.5em;
+    color: #222337;
+}
+.nav ul li.action a .icon{
+    background: var(--clr);
+    color: #fff;
+    transform: translateY(-27px);
+}
+.nav ul li a .icon::before{
+    content: '';
+    position: absolute;
+    top:10px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: var(--clr);
+    border-radius: 50%;
+    filter: blur(5px);
+    opacity: 0;
+}
+.nav ul li.active a .icon::before{
+    opacity: 0.5;
+
+}
+
+.indicator{
+    position: absolute;
+    top: -35px;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50%;
+    z-index: 1;
+    transition: 0.5s;
+}
+.indicator::before{
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -28px;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 15px 18px #fff;
+}
+.indicator::after{
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: -28px;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: -15px 18px #fff;
+}
