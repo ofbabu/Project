@@ -1,0 +1,364 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, Helvetica, sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background: rgb(216, 199, 199);
+}
+.container .marquee{
+    width: 100%;
+    height: auto;
+    background: #052e59;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.container .marquee .marquee-Box{
+    width: 90%;
+    margin: 0 auto;
+}
+.container .tittle{
+    width: 90%;
+    /* background:#fff; */
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+.container .tittle .tittle-Box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    width: 150px;
+    height: 150px;
+}
+.container .tittle .tittle-Box .school-Name h1{
+    color: rgb(157, 174, 79);
+    line-height: 70px;
+
+}
+.container .tittle .tittle-Box .school-Name h3{
+    color: rgb(25, 73, 110);
+    line-height: 25px;
+
+}
+.container .tittle .tittle-Box .school-Name h4{
+    color: rgb(175, 127, 15);
+}
+.container .tittle .tittle-Box .contract{
+    text-align: center;
+    background: #abb90a;
+    padding: 10px;
+    border-radius: 20px;
+}
+.container .tittle .tittle-Box .contract h3{
+    /* background: #fff; */
+    /* padding: 10px;
+    border-radius: 10px; */
+    text-transform: uppercase;
+}
+.icons{
+    background: #fff;
+    margin: 5px auto;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.icons a i{
+    padding: 0 7px;
+}
+.icons a i:hover{
+    font-size: 40px;
+    border:2px solid red;
+    border-radius: 50%;
+    padding: 10px;
+}
+.container .navber{
+    width: 100%;
+    height: auto;
+    background: #052e59;
+}
+.container .navber .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container .navber .menu ul{
+}
+.container .navber .menu ul li{
+    list-style: none;
+    float: left;
+    padding:20px;
+}
+.container .navber .menu ul li a:hover{
+    background: #b07903;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: all  ease-in .1s;
+}
+.container .navber .menu ul li.active{
+    background: #b07903;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 10px 0;
+}
+.container .navber .menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.container .navber .searchBox{
+    position: relative;
+    left: 50px;
+}
+.container .navber .searchBox input{
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+.container .navber .searchBox input::placeholder{
+    text-align: center;
+    color: red;
+    letter-spacing: 2px;
+}
+.container .navber .searchBox a{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    text-align: center;
+}
+.container .image-slide{
+    width: 100%;
+    height: 70vh;
+    background: #fff;
+    margin:0 auto;
+    position: relative;
+}
+
+.container .image-slide img{
+    width: 100%;
+    height: 100%;
+}
+.ImgChangeButton {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+ .ImgChangeButton button{
+    position: relative;
+    top: -250px;
+    font-size: 30px;
+    background: rgba(0,0,0,.5);
+    border: 2px solid rgb(7, 9, 69);
+    border-radius: 30px;
+    padding: 5px 10px;
+    color: #fff;
+
+ }
+.button{
+    width:90%;
+    height: auto;
+    position: relative;
+    top:-50px ;
+    /* background-color: #b07903; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px auto;
+ }
+.buttonBox{
+    width: 15%;
+    height: 200px;
+    background: #052e59;
+    border-radius: 20px;
+    border: 1px solid #fff;
+ }
+ .massage{
+    width: 90%;
+    height: auto;
+    margin: 0 40px;
+    display: flex;
+    /* justify-content:center; */
+    /* align-items: center; */
+ }
+ .msgOwner{
+    width: 300px;
+    height: 300px;
+    background: rgba(255,255,255,.5);
+    border: 1px solid rgba(0,0,0,.5);
+    margin: 0 100px 20px 100px;
+
+ }
+.msgOwner img{
+    width: 300px;
+    height: 300px;
+    padding: 5px;
+ }
+ .msgText{
+
+ }
+ .msgText h1{
+    letter-spacing:1px;
+    text-transform: uppercase;
+    line-height: 50px;
+    border-bottom: 2px solid rgba(0,0,0,1);
+
+ }
+ .msgText span{
+    line-height: 500px;
+ }
+.msgText p{
+    padding-top: 40px;
+    line-height: 25px;
+ }
+.section1{
+    width: 100%;
+    height: 300px;
+    background: rgb(181, 133, 11);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sectionBox{
+background:#fff;
+margin: 0 50px;
+/* padding: 20px; */
+border-radius: 20px;
+text-align: center;
+overflow: hidden;
+}
+.sectionBox h1{
+    text-transform: uppercase;
+    font-size: 20px;
+    background: #052e59;
+    color: #fff;
+    padding: 15px;
+
+}
+.sectionBox p{
+    text-transform: uppercase;
+    font-size: 30px;
+    padding: 20px;
+    color: #052e59;
+
+}
+
+/* even  */
+.evenHeader{
+    text-align: center;
+    margin: 50px 0 100px 0;
+}
+.evenHeader h1{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.evenHeader p{
+    text-align: center;
+    line-height: 50px;
+}
+.even{
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px auto;
+}
+.evenBox{
+    width: 30%;
+    height: 400px;
+    border: 2px solid rgba(0,0,0,.5);
+    background-color: rgba(255,255,255,.7);
+
+}
+.evenBox img{
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+}
+.evenBox p{
+    text-transform: capitalize;
+    margin: 5px 30px ;
+}
+.evenBox h1{
+    text-transform:capitalize;
+    margin: 10px 20px;
+}
+
+
+.address{
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #052e59;
+    color: #fff;
+    border-radius: 40px;
+    margin: 20px auto;
+    overflow: hidden;
+    position: relative;
+    bottom: -100px;
+}
+.addressBox{
+    padding: 40px;
+    text-align: center;
+    overflow: hidden;
+}
+.addressBox h2{
+    text-transform: capitalize;
+    line-height: 4rem;
+}
+.addressBox p{
+    text-transform: capitalize;
+}
+
+footer{
+    width: 100%;
+    height: 500px;
+    background: rgba(0,0,0,.8);
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 200px 0;
+}
+.box{
+    margin-left: 100px;
+    text-align: center;
+}
+.box h1{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+
+}
+.box p{
+    color: #fff;
+    text-transform: capitalize;
+    line-height: 40px;
+
+}
+.box img{
+    width: 200px;
+    height: 200px;
+}
